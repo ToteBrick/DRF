@@ -69,8 +69,8 @@ class BookModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = BookInfo
         # fields = '__all__'
-        # fields = ('id', 'btitle')  # 指定字段内容
-        exclude = ('bread',)  # 排除某个字段
+        fields = ('id', 'btitle', 'bread')  # 指定字段内容
+        # exclude = ('bread',)  # 排除某个字段
         read_only_fields = ('bcomment',)  # 添加read——only=true
 
         # extra_kwargs = {
