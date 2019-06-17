@@ -1,4 +1,3 @@
-
 from django.http import HttpResponse
 from rest_framework.generics import GenericAPIView
 from rest_framework.response import Response
@@ -6,7 +5,7 @@ from rest_framework.response import Response
 from apps.models import BookInfo
 
 # 增加操作
-from apps.serializers import  BookModelSerializer
+from apps.serializers import BookModelSerializer
 
 
 class BooksView(GenericAPIView):
@@ -37,6 +36,20 @@ class BooksView(GenericAPIView):
 class BookView(GenericAPIView):
     queryset = BookInfo.objects.all()
     serializer_class = BookModelSerializer
+
+    def get(self, request, pk):
+        '''
+
+        :param request:
+        :param pk:
+        :return: 查询单一图书
+        '''
+        try:
+            book = self.get_object()
+        except Exception:
+            return Response({'errors': '未找到该书'}, status=400)
+        ser = self.get_serializer(book)
+        return Response(ser.data)
 
     def put(self, request, pk):
         '''
