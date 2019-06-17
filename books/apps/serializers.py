@@ -73,11 +73,11 @@ class BookModelSerializer(serializers.ModelSerializer):
         exclude = ('bread',)  # 排除某个字段
         read_only_fields = ('bcomment',)  # 添加read——only=true
 
-        extra_kwargs = {
-            'is_delete': {
-                'default': True
-            }
-        }
+        # extra_kwargs = {
+        #     'is_delete': {
+        #         'default': True
+        #     }
+        # }
 
 
 class HeroSerializer1(serializers.Serializer):
