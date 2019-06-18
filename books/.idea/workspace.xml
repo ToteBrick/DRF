@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a5d333e-11aa-49b1-9e81-e832e04a00ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/views_modelviewset.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/views_modelviewset.py" afterDir="false" />
     </list>
@@ -30,10 +28,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/views_modelviewset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            <state relative-caret-position="275">
+              <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="18" selection-end-column="34" />
               <folding>
-                <element signature="e#0#48#0" expanded="true" />
+                <element signature="e#0#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -42,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="335">
+              <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -106,8 +104,8 @@
         <option value="$PROJECT_DIR$/apps/views_generic_minxin.py" />
         <option value="$PROJECT_DIR$/apps/views_viewset.py" />
         <option value="$PROJECT_DIR$/apps/views_genericviewset.py" />
-        <option value="$PROJECT_DIR$/apps/urls.py" />
         <option value="$PROJECT_DIR$/apps/serializers.py" />
+        <option value="$PROJECT_DIR$/apps/urls.py" />
         <option value="$PROJECT_DIR$/apps/views_modelviewset.py" />
       </list>
     </option>
@@ -210,7 +208,7 @@
       <option name="presentableId" value="Default" />
       <updated>1560748745223</updated>
       <workItem from="1560748769526" duration="22160000" />
-      <workItem from="1560820664766" duration="6479000" />
+      <workItem from="1560820664766" duration="6802000" />
     </task>
     <task id="LOCAL-00001" summary="GenericAPIView 增删改查">
       <created>1560749993363</created>
@@ -275,17 +273,23 @@
       <option name="project" value="LOCAL" />
       <updated>1560773933621</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="自定义返回不同序列化器与自定义路由映射">
+      <created>1560829978559</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1560829978559</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28639000" />
+    <option name="totallyTimeSpent" value="28962000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22392885" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22392885" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -321,7 +325,8 @@
     <MESSAGE value="viewset基本使用" />
     <MESSAGE value="GenericViewset使用-修改阅读量、返回最新书籍" />
     <MESSAGE value="router使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="router使用" />
+    <MESSAGE value="自定义返回不同序列化器与自定义路由映射" />
+    <option name="LAST_COMMIT_MESSAGE" value="自定义返回不同序列化器与自定义路由映射" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/books/__init__.py">
@@ -532,16 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -552,12 +547,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apps/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/views_modelviewset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        <state relative-caret-position="275">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="18" selection-end-column="34" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>

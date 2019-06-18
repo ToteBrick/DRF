@@ -9,6 +9,7 @@ class BookInfoModelViewSet(ModelViewSet):
     queryset = BookInfo.objects.all()
 
     # serializer_class = BookModelSerializer
+    #重写get_serializer_class根据不同action返回不同序列化器
     def get_serializer_class(self):
         if self.action == 'retrieve':
             return BookSerializer2
@@ -17,7 +18,7 @@ class BookInfoModelViewSet(ModelViewSet):
         else:
             return BookSerializer1
 
-    @action(methods=['get'], detail=True)
+    @action(methods=['get'], detail=True) # detail为True匹配正则
     def show(self, request, pk):
         book = self.get_object()
         ser = self.get_serializer(book)
