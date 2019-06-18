@@ -27,4 +27,5 @@ urlpatterns = [
     # url(r'^books/$', views_apiview.BooksView.as_view()),
     # url(r'^books/(?P<pk>\d+)/$', views_apiview.BookView.as_view()),
 ]
+print(router.urls)
 urlpatterns += router.urls

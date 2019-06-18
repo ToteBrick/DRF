@@ -7,6 +7,8 @@ class BookSerializer1(serializers.Serializer):
     btitle = serializers.CharField()
     bpub_date = serializers.DateField()
 
+class BookSerializer2(serializers.Serializer):
+    btitle = serializers.CharField()
 
 class HeroSerializer(serializers.Serializer):
     """英雄数据序列化器"""
