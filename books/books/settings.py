@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps.apps.AppsConfig',
     'rest_framework',  # 第三方djangorestframework注册
+    'django_filters'  # 过滤配置
 ]
 
 MIDDLEWARE = [
@@ -69,15 +70,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'books.wsgi.application'
 
-# Database
-# https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
 # 修改数据库配置 改为Mysql
 DATABASES = {
     'default': {
@@ -89,9 +81,6 @@ DATABASES = {
         'NAME': 'django_db'  # 数据库名字
     }
 }
-
-# Password validation
-# https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -108,9 +97,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# Internationalization
-# https://docs.djangoproject.com/en/1.11/topics/i18n/
-
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -120,9 +106,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
 
@@ -143,7 +126,9 @@ REST_FRAMEWORK = {
     # ),
     # 限流次数
     'DEFAULT_THROTTLE_RATES': {
-        'anon': '5/day', # 匿名用户
-        'user': '20/day' # 登录用户
-    }
+        'anon': '5/day',  # 匿名用户
+        'user': '20/day'  # 登录用户
+    },
+    # 过滤字段配置
+    'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',)
 }

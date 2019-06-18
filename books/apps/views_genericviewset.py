@@ -21,6 +21,8 @@ class BookInfoViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, GenericV
     throttle_classes = [AnonRateThrottle, UserRateThrottle]
 
     # throttle_scope  指定类视图限流名字，来限制访问次数
+    # 过滤字段
+    filter_fields = ('btitle', 'bread')  # 127.0.0.1:8000/books/?btitle=西游记
     # detail为False 表示不需要处理具体的BookInfo对象
     @action(methods=['get'], detail=False)
     def latest(self, request):
