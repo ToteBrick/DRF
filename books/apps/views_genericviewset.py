@@ -12,6 +12,19 @@ from apps.models import BookInfo
 
 
 class BookInfoViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, GenericViewSet):
+    """
+        list:
+        返回图书列表数据
+
+        retrieve:
+        返回图书详情数据
+
+        latest:
+        返回最新的图书数据
+
+        read:
+        修改图书的阅读量
+        """
     queryset = BookInfo.objects.all()
     serializer_class = BookModelSerializer
     # 认证
@@ -36,7 +49,7 @@ class BookInfoViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, GenericV
         max_page_size = 6  # 最大显示条数
 
     # 指定分页
-    pagination_class = PageNum   # 127.0.0.1:8000/books_set/?page=1&page_size=2
+    pagination_class = PageNum  # 127.0.0.1:8000/books_set/?page=1&page_size=2
 
     # detail为False 表示不需要处理具体的BookInfo对象
     @action(methods=['get'], detail=False)

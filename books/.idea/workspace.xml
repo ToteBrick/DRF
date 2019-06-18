@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a5d333e-11aa-49b1-9e81-e832e04a00ea" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/views_genericviewset.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/views_genericviewset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/views_modelviewset.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/views_modelviewset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/books/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,10 +21,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/views_genericviewset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-301">
-              <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+            <state relative-caret-position="-601">
+              <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-125">
+              <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -27,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/views_modelviewset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+            <state relative-caret-position="100">
+              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -36,11 +54,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/books/settings.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="136" column="14" selection-start-line="136" selection-start-column="14" selection-end-line="136" selection-end-column="14" />
+            <state relative-caret-position="50">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+            <state relative-caret-position="175">
+              <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -81,17 +102,17 @@
         <option value="$PROJECT_DIR$/apps/migrations/urls.py" />
         <option value="$PROJECT_DIR$/books/urls.py" />
         <option value="$PROJECT_DIR$/apps/views_generic.py" />
-        <option value="$PROJECT_DIR$/apps/models.py" />
         <option value="$PROJECT_DIR$/apps/views_mixin.py" />
         <option value="$PROJECT_DIR$/apps/views_apiview.py" />
         <option value="$PROJECT_DIR$/apps/views_generic_minxin.py" />
-        <option value="$PROJECT_DIR$/apps/serializers.py" />
         <option value="$USER_HOME$/Envs/django_py3_1.11/Lib/site-packages/rest_framework/mixins.py" />
         <option value="$PROJECT_DIR$/apps/views_viewset.py" />
-        <option value="$PROJECT_DIR$/apps/views_modelviewset.py" />
+        <option value="$PROJECT_DIR$/books/settings.py" />
         <option value="$PROJECT_DIR$/apps/urls.py" />
         <option value="$PROJECT_DIR$/apps/views_genericviewset.py" />
-        <option value="$PROJECT_DIR$/books/settings.py" />
+        <option value="$PROJECT_DIR$/apps/models.py" />
+        <option value="$PROJECT_DIR$/apps/serializers.py" />
+        <option value="$PROJECT_DIR$/apps/views_modelviewset.py" />
       </list>
     </option>
   </component>
@@ -195,7 +216,7 @@
       <workItem from="1560748769526" duration="22160000" />
       <workItem from="1560820664766" duration="6802000" />
       <workItem from="1560831975561" duration="508000" />
-      <workItem from="1560834570988" duration="14757000" />
+      <workItem from="1560834570988" duration="16423000" />
     </task>
     <task id="LOCAL-00001" summary="GenericAPIView 增删改查">
       <created>1560749993363</created>
@@ -330,14 +351,21 @@
       <option name="project" value="LOCAL" />
       <updated>1560859582284</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="异常处理捕获数据库异常">
+      <created>1560860095168</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1560860095168</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44227000" />
+    <option name="totallyTimeSpent" value="45893000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23039612" />
@@ -386,7 +414,8 @@
     <MESSAGE value="排序设置、与过滤字段有冲突" />
     <MESSAGE value="全局分页设置" />
     <MESSAGE value="局部分页设置" />
-    <option name="LAST_COMMIT_MESSAGE" value="局部分页设置" />
+    <MESSAGE value="异常处理捕获数据库异常" />
+    <option name="LAST_COMMIT_MESSAGE" value="异常处理捕获数据库异常" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/books/__init__.py">
@@ -406,9 +435,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$USER_HOME$/Envs/django_py3_1.11/Lib/site-packages/django/db/models/options.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -573,10 +599,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Envs/django_py3_1.11/Lib/site-packages/rest_framework/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2698">
+          <caret line="848" column="6" selection-start-line="848" selection-start-column="6" selection-end-line="848" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="130" column="6" lean-forward="true" selection-start-line="130" selection-start-column="6" selection-end-line="130" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/views_genericviewset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-601">
+          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/views_modelviewset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        <state relative-caret-position="100">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
@@ -585,45 +662,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="67" column="44" lean-forward="true" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+        <state relative-caret-position="-125">
+          <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Envs/django_py3_1.11/Lib/site-packages/rest_framework/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2698">
-          <caret line="848" column="6" selection-start-line="848" selection-start-column="6" selection-end-line="848" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/views_genericviewset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-301">
-          <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/books/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="136" column="14" selection-start-line="136" selection-start-column="14" selection-end-line="136" selection-end-column="14" />
         </state>
       </provider>
     </entry>

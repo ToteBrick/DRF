@@ -26,7 +26,7 @@ class HeroSerializer(serializers.Serializer):
 class BookSerializer(serializers.Serializer):
     btitle = serializers.CharField()
     # bpub_date = serializers.DateField(write_only=True)
-    bcomment = serializers.IntegerField(min_value=1, max_value=50, default=2)
+    bcomment = serializers.IntegerField(min_value=1, max_value=50, default=2, help_text='评论量',label='评论量')
     bread = serializers.IntegerField(label='阅读量', required=False)
 
     # 嵌套序列化返回   PrimaryKeyRelatedField返回关联对象的id值

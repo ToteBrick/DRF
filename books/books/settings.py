@@ -135,5 +135,5 @@ REST_FRAMEWORK = {
     # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     # 'PAGE_SIZE': 5  # 每页数目
     # 自定义的异常处理
-    'EXCEPTION_HANDLER': 'books.apps.utils.exception_handler'
+    'EXCEPTION_HANDLER': 'apps.utils.exception_handler'
 }
