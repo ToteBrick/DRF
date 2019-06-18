@@ -3,6 +3,7 @@ from rest_framework.authentication import BasicAuthentication, SessionAuthentica
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.throttling import UserRateThrottle, AnonRateThrottle
+from rest_framework.filters import OrderingFilter
 from rest_framework.viewsets import GenericViewSet
 from rest_framework.decorators import action
 from apps.serializers import BookModelSerializer
@@ -22,7 +23,11 @@ class BookInfoViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, GenericV
 
     # throttle_scope  指定类视图限流名字，来限制访问次数
     # 过滤字段
-    filter_fields = ('btitle', 'bread')  # 127.0.0.1:8000/books/?btitle=西游记
+    # filter_fields = ('btitle', 'bread')  # 127.0.0.1:8000/books/?btitle=西游记
+    # 排序
+    filter_backends = [OrderingFilter]
+    ordering_fields = ('bread', 'id')  # 127.0.0.1:8000/books/?ordering=-bread
+
     # detail为False 表示不需要处理具体的BookInfo对象
     @action(methods=['get'], detail=False)
     def latest(self, request):

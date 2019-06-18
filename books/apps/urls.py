@@ -16,7 +16,7 @@ urlpatterns = [
     url(r'^books_set/(?P<pk>\d+)/$', BookInfoViewSet.as_view({'get': 'retrieve'})), #带权限验证的路由
     url(r'^books_set/$', BookInfoViewSet.as_view({'get': 'list'})), #带权限验证的路由
     url(r'^books_set/(?P<pk>\d+)/read/$', BookInfoViewSet.as_view({'put': 'read'})),
-    url(r'^books/$', views_viewset.BooksView.as_view({'get': 'list', 'post': 'create'})),
+    # url(r'^books/$', views_viewset.BooksView.as_view({'get': 'list', 'post': 'create'})),
     # url(r'^books/(?P<pk>\d+)/$',
     #     views_viewset.BookView.as_view({'get': 'retrieve', 'put': 'update', 'delete': 'destory'})),
     # url(r'^books/$', views_generic_minxin.BooksView.as_view()),
