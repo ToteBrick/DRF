@@ -1,5 +1,6 @@
 from rest_framework import mixins
 from rest_framework.authentication import BasicAuthentication, SessionAuthentication
+from rest_framework.pagination import PageNumberPagination, LimitOffsetPagination
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.throttling import UserRateThrottle, AnonRateThrottle
@@ -27,6 +28,15 @@ class BookInfoViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, GenericV
     # 排序
     filter_backends = [OrderingFilter]
     ordering_fields = ('bread', 'id')  # 127.0.0.1:8000/books/?ordering=-bread
+
+    # 指定分页类
+    class PageNum(PageNumberPagination):
+        page_size = 3  # 每页默认大小
+        page_size_query_param = 'page_size'  # 查询参数
+        max_page_size = 6  # 最大显示条数
+
+    # 指定分页
+    pagination_class = PageNum   # 127.0.0.1:8000/books_set/?page=1&page_size=2
 
     # detail为False 表示不需要处理具体的BookInfo对象
     @action(methods=['get'], detail=False)
