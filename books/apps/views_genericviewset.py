@@ -1,4 +1,6 @@
 from rest_framework import mixins
+from rest_framework.authentication import BasicAuthentication, SessionAuthentication
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet
 from rest_framework.decorators import action
@@ -9,6 +11,10 @@ from apps.models import BookInfo
 class BookInfoViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, GenericViewSet):
     queryset = BookInfo.objects.all()
     serializer_class = BookModelSerializer
+    # 认证
+    authentication_classes = [BasicAuthentication, SessionAuthentication]
+    # 权限
+    permission_classes = [IsAuthenticated]  # 授权登录用户
 
     # detail为False 表示不需要处理具体的BookInfo对象
     @action(methods=['get'], detail=False)

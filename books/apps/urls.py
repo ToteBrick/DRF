@@ -13,9 +13,9 @@ router.register(r'books', BookInfoModelViewSet, base_name='book')
 urlpatterns = [
     # url(r'^books/$', BookInfoViewSet.as_view({'get': 'list'})),
     # url(r'^books/latest/$', BookInfoViewSet.as_view({'get': 'latest'})),
-    # url(r'^books/(?P<pk>\d+)/$', BookInfoViewSet.as_view({'get': 'retrieve'})),
-    # url(r'^books/(?P<pk>\d+)/read/$', BookInfoViewSet.as_view({'put': 'read'})),
-    # url(r'^books/$', views_viewset.BooksView.as_view({'get': 'list', 'post': 'create'})),
+    url(r'^books_set/(?P<pk>\d+)/$', BookInfoViewSet.as_view({'get': 'retrieve'})), #带权限验证的路由
+    url(r'^books_set/(?P<pk>\d+)/read/$', BookInfoViewSet.as_view({'put': 'read'})),
+    url(r'^books/$', views_viewset.BooksView.as_view({'get': 'list', 'post': 'create'})),
     # url(r'^books/(?P<pk>\d+)/$',
     #     views_viewset.BookView.as_view({'get': 'retrieve', 'put': 'update', 'delete': 'destory'})),
     # url(r'^books/$', views_generic_minxin.BooksView.as_view()),
@@ -27,5 +27,6 @@ urlpatterns = [
     # url(r'^books/$', views_apiview.BooksView.as_view()),
     # url(r'^books/(?P<pk>\d+)/$', views_apiview.BookView.as_view()),
 ]
-print(router.urls, sep='\n')
+for url in router.urls:
+    print(url)
 urlpatterns += router.urls
