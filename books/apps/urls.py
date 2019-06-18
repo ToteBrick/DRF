@@ -9,7 +9,7 @@ from . import views_generic_minxin
 from . import views_viewset
 
 router = routers.DefaultRouter()
-router.register(r'books', BookInfoViewSet, base_name='book')
+router.register(r'books', BookInfoModelViewSet, base_name='book')
 urlpatterns = [
     # url(r'^books/$', BookInfoViewSet.as_view({'get': 'list'})),
     # url(r'^books/latest/$', BookInfoViewSet.as_view({'get': 'latest'})),
