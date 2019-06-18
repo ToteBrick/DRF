@@ -136,13 +136,14 @@ REST_FRAMEWORK = {
     # 'DEFAULT_PERMISSION_CLASSES': (
     #     'rest_framework.permissions.IsAuthenticated',
     # )
-    # 全局限流配置
-    'DEFAULT_THROTTLE_CLASSES': (
-        'rest_framework.throttling.AnonRateThrottle',
-        'rest_framework.throttling.UserRateThrottle'
-    ),
+    # 全局限流配置-用户划分限流
+    # 'DEFAULT_THROTTLE_CLASSES': (
+    #     'rest_framework.throttling.AnonRateThrottle',
+    #     'rest_framework.throttling.UserRateThrottle'
+    # ),
+    # 限流次数
     'DEFAULT_THROTTLE_RATES': {
-        'anon': '3/day', # 匿名用户
-        'user': '10/day' # 登录用户
+        'anon': '5/day', # 匿名用户
+        'user': '20/day' # 登录用户
     }
 }

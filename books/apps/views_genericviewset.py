@@ -2,6 +2,7 @@ from rest_framework import mixins
 from rest_framework.authentication import BasicAuthentication, SessionAuthentication
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
+from rest_framework.throttling import UserRateThrottle, AnonRateThrottle
 from rest_framework.viewsets import GenericViewSet
 from rest_framework.decorators import action
 from apps.serializers import BookModelSerializer
@@ -16,6 +17,10 @@ class BookInfoViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, GenericV
     # 权限
     permission_classes = [IsAuthenticated]  # 授权登录用户
 
+    # 限制访问次数
+    throttle_classes = [AnonRateThrottle, UserRateThrottle]
+
+    # throttle_scope  指定类视图限流名字，来限制访问次数
     # detail为False 表示不需要处理具体的BookInfo对象
     @action(methods=['get'], detail=False)
     def latest(self, request):
