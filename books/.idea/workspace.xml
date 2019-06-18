@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a5d333e-11aa-49b1-9e81-e832e04a00ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/views_genericviewset.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/views_genericviewset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/books/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/views_genericviewset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="38" column="35" lean-forward="true" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="74" />
+            <state relative-caret-position="-301">
+              <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -38,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/books/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
+            <state relative-caret-position="224">
+              <caret line="136" column="14" selection-start-line="136" selection-start-column="14" selection-end-line="136" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -92,8 +90,8 @@
         <option value="$PROJECT_DIR$/apps/views_viewset.py" />
         <option value="$PROJECT_DIR$/apps/views_modelviewset.py" />
         <option value="$PROJECT_DIR$/apps/urls.py" />
-        <option value="$PROJECT_DIR$/books/settings.py" />
         <option value="$PROJECT_DIR$/apps/views_genericviewset.py" />
+        <option value="$PROJECT_DIR$/books/settings.py" />
       </list>
     </option>
   </component>
@@ -197,7 +195,7 @@
       <workItem from="1560748769526" duration="22160000" />
       <workItem from="1560820664766" duration="6802000" />
       <workItem from="1560831975561" duration="508000" />
-      <workItem from="1560834570988" duration="14423000" />
+      <workItem from="1560834570988" duration="14757000" />
     </task>
     <task id="LOCAL-00001" summary="GenericAPIView 增删改查">
       <created>1560749993363</created>
@@ -325,11 +323,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560858941412</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="局部分页设置">
+      <created>1560859582284</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1560859582284</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43893000" />
+    <option name="totallyTimeSpent" value="44227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
@@ -380,7 +385,8 @@
     <MESSAGE value="过滤字段配置" />
     <MESSAGE value="排序设置、与过滤字段有冲突" />
     <MESSAGE value="全局分页设置" />
-    <option name="LAST_COMMIT_MESSAGE" value="全局分页设置" />
+    <MESSAGE value="局部分页设置" />
+    <option name="LAST_COMMIT_MESSAGE" value="局部分页设置" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/books/__init__.py">
@@ -604,20 +610,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/books/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/views_genericviewset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="38" column="35" lean-forward="true" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="74" />
+        <state relative-caret-position="-301">
+          <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="136" column="14" selection-start-line="136" selection-start-column="14" selection-end-line="136" selection-end-column="14" />
         </state>
       </provider>
     </entry>

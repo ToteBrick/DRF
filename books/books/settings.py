@@ -134,4 +134,6 @@ REST_FRAMEWORK = {
     # 全局分页设置
     # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     # 'PAGE_SIZE': 5  # 每页数目
+    # 自定义的异常处理
+    'EXCEPTION_HANDLER': 'books.apps.utils.exception_handler'
 }
